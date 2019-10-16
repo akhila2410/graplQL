@@ -1,0 +1,20 @@
+type Vehicle {
+	id: ID!,
+	type: String,
+	modelCode: String,
+	brandName: String,
+	launchDate: String
+}
+
+type Query {
+	findAllVehicles:[Vehicle]!
+	vehiclesByCount(count: Int):[Vehicle]
+	vehicleById(id: ID!):Vehicle
+}                                     
+
+type Mutation {
+	createVehicle(type: String!, modelCode: String!, brandName: String, launchDate: String):Vehicle
+    deleteVehicle(id: ID!) : Boolean
+    updateVehicleType(id: ID!, type: String!) : Vehicle!
+
+}
