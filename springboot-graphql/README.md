@@ -5,4 +5,5 @@ A sample application with GraphQL and Spring Boot
 
 
 //test
-//master
+//branch 3
+//gui test
